@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fatih_hoca.srcs/sources_1/new/d_ff_8bit.vhd" \
+"../../../../fatih_hoca.srcs/sources_1/new/fulladder_1bit.vhd" \
+"../../../../fatih_hoca.srcs/sources_1/new/fulladder_8bit.vhd" \
+"../../../../fatih_hoca.srcs/sources_1/new/streamadder.vhd" \
+"../../../../fatih_hoca.srcs/sim_1/new/streamadder_tb.vhd" \
+
+# Do not sort compile order
+nosort

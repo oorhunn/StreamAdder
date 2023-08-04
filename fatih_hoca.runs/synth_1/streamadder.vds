@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Aug  4 23:45:40 2023
+# Process ID: 12584
+# Current directory: C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.runs/synth_1
+# Command line: vivado.exe -log streamadder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source streamadder.tcl
+# Log file: C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.runs/synth_1/streamadder.vds
+# Journal file: C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.runs/synth_1\vivado.jou
+# Running On: DESKTOP-38849QU, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34277 MB
+#-----------------------------------------------------------
+source streamadder.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 447.805 ; gain = 163.879
+Command: read_checkpoint -auto_incremental -incremental C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/utils_1/imports/synth_1/FullAdder_8bit.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/utils_1/imports/synth_1/FullAdder_8bit.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top streamadder -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32876
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 891.055 ; gain = 408.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'streamadder' [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/streamadder.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'fulladder_8bit' [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_8bit.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'fulladder_1bit' [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_1bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'fulladder_1bit' (0#1) [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_1bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'fulladder_8bit' (0#1) [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_8bit.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'd_ff_8bit' [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/d_ff_8bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'd_ff_8bit' (0#1) [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/d_ff_8bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'streamadder' (0#1) [C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/streamadder.vhd:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 981.336 ; gain = 499.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 981.336 ; gain = 499.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 981.336 ; gain = 499.004
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 981.336 ; gain = 499.004
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 96    
++---Registers : 
+	                8 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    15|
+|3     |LUT3 |    17|
+|4     |LUT4 |     3|
+|5     |LUT5 |    37|
+|6     |LUT6 |    23|
+|7     |FDCE |    40|
+|8     |IBUF |    50|
+|9     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   194|
+|2     |  DFF0   |d_ff_8bit   |    21|
+|3     |  DFF1   |d_ff_8bit_0 |    43|
+|4     |  DFF2   |d_ff_8bit_1 |    22|
+|5     |  DFF3   |d_ff_8bit_2 |    14|
+|6     |  DFF4   |d_ff_8bit_3 |    35|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1219.070 ; gain = 736.738
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1226.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1330.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 23046092
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1330.223 ; gain = 858.551
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.runs/synth_1/streamadder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file streamadder_utilization_synth.rpt -pb streamadder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 23:46:14 2023...

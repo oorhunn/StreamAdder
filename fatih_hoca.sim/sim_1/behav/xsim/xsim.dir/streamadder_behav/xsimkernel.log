@@ -1,0 +1,7 @@
+Running: xsim.dir/streamadder_behav/xsimk.exe -simmode gui -wdb streamadder_behav.wdb -simrunnum 0 -socket 59103
+Design successfully loaded
+Design Loading Memory Usage: 7576 KB (Peak: 7576 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7976 KB (Peak: 7976 KB)
+Simulation CPU Usage: 46 ms

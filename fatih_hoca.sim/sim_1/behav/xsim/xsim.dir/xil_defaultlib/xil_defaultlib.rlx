@@ -1,0 +1,13 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sim_1/new/fulladder_1bit_TB.vhd,1691150902,vhdl,,,,testbench_fulladder_1bit,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sim_1/new/fulladder_8bit_TB.vhd,1691151494,vhdl,,,,testbench_fulladder_8bit,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sim_1/new/nand_gate_TB.vhd,1691146763,vhdl,,,,tb_nand_gate,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sim_1/new/streamadder_tb.vhd,1691182470,vhdl,,,,streamadder_tb,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/d_ff_8bit.vhd,1691158492,vhdl,C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/streamadder.vhd,,,d_ff_8bit,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_1bit.vhd,1691150545,vhdl,C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_8bit.vhd,,,fulladder_1bit,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/fulladder_8bit.vhd,1691151087,vhdl,C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/streamadder.vhd,,,fulladder_8bit,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/nand_gate.vhd,1691146756,vhdl,,,,nand_gate,,,,,,,,
+C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sources_1/new/streamadder.vhd,1691181920,vhdl,C:/Users/anil_/FPGAProjects/fatih_hoca/fatih_hoca.srcs/sim_1/new/streamadder_tb.vhd,,,streamadder,,,,,,,,
